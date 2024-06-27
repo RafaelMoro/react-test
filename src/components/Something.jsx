@@ -2,7 +2,8 @@ import { useSomething } from "../hooks/useSomething"
 
 const Something = () => {
   const { data, error, isError, isLoading } = useSomething()
-  console.log(data)
+  // console.log(data)
+
   return (
     <div style={{ backgroundColor: 'black', minWidth: '100vw', minHeight: '100vh', color: 'white' }}>
       { (isLoading) && <p>Loading...</p> }
